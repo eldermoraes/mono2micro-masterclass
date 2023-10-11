@@ -1,8 +1,5 @@
 package com.eldermoraes.travelorder;
 
-import com.eldermoraes.flight.Flight;
-import com.eldermoraes.hotel.Hotel;
-
 public class TravelOrderDTO {
 
     private String fromAirport;
@@ -29,7 +26,8 @@ public class TravelOrderDTO {
             hotel = new Hotel();
         }
 
-        return new TravelOrderDTO(flight.fromAirport, flight.toAirport, hotel.nights);
+        return new TravelOrderDTO(flight.getFromAirport(), flight.getToAirport(), 
+            hotel.getNights());
     }
 
     public static TravelOrderDTO of(String fromAirport, String toAirport, Integer nights){
