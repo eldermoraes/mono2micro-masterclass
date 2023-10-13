@@ -15,7 +15,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 
-@RegisterRestClient(baseUri = "http://localhost:8081/flight")
+@RegisterRestClient(baseUri = "http://flight-app-eldermoraes-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/flight")
 public interface FlightService {
     
     @GET
